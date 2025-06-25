@@ -8,8 +8,11 @@
       margin: 0;
       overflow: hidden;
       font-family: 'Segoe Script', cursive;
-      background: #e6ccff url("fondo.jpg") no-repeat center center;
-      background-size: auto;
+      background-color: #e6ccff;
+      background-image: url("AQUI_TU_URL");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
 
     .lluvia, .flor {
@@ -106,7 +109,6 @@
     setTimeout(() => brillito.remove(), 1500);
   }
 
-  // Eventos
   setInterval(crearFrase, 300);
   setInterval(crearFlor, 350);
   crearBrillitosIniciales();
